@@ -26,7 +26,7 @@ I refresh my knowledge about the flex box.
 Need to focus more on time management and custom css properties to organized the code in betterway
 
 ## Author
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Frontend Mentor - [@eewa-SANJ](https://www.frontendmentor.io/profile/eewa-SANJ)
 - Github - [@SMarukona](https://github.com/SMarukona)
 - Twitter - [@yourusername](https://www.twitter.com/yourusername)
 
