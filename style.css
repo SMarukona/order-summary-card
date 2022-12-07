@@ -1,0 +1,428 @@
+/*Reseting default css*/
+
+*:before, *:after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    background-color: #F0F0F0;
+    color: #ACAEB3;
+    font-family: 'Red Hat Display', sans-serif;
+    font: inherit;
+    font-size: 1rem;
+    margin: 0;
+    padding: 0;
+}
+
+ul,ol,li{
+	margin: 0;
+    padding: 0;
+}
+
+/*Declaring custom css properties*/
+
+:root {
+
+    --primary-pale-blue: hsl(225, 100%, 94%);
+    --primary-bright-blue: hsl(245, 75%, 52%);
+    --neutral-pale-blue: hsl(225, 100%, 98%);
+    --neutral-desaturated-blue:hsl(224, 23%, 55%);
+    --neutral-dark-blue: hsl(223, 47%, 23%);
+    --card-bg-color: hsl(0, 0%, 100%);
+    --body-color: hsl(0, 0%, 94%);
+    --font-size-16px: 1rem;
+    --font-size-14px: 0.875rem;
+    --font-size-26px: 1.625rem;
+}
+
+.clearfix{
+	clear: both;
+	margin: 0;
+	padding: 0;
+}
+
+/*Card styling */
+section{
+    background-color: var(--body-color);
+    text-align: center;
+    
+}
+
+/*Main container*/
+
+.container{
+    background-image: url(images/pattern-background-desktop.svg);
+    background-repeat: repeat-x;
+    background-color: hsl(225, 100%, 94%);
+    max-width: 81.25rem;
+    margin: 7.625rem 4.375rem;
+    text-align: center;
+   
+
+}
+
+.order-summary-card{
+    margin: auto;
+    overflow: hidden;
+    padding-top: 5.75rem;
+    padding-bottom: 5.75rem;
+    text-align: center;
+    width: 25.375rem;
+    
+    
+    
+}
+
+/*Hero image*/
+.image-music{
+    border-radius: 0.8rem 0.8rem 0 0;
+    height: 12.5rem;
+    width: 25.375rem;
+}
+
+/*Hero heading*/
+.card-detais{
+    background-color: var(--card-bg-color);
+    border-radius: 0 0 0.8rem 0.8rem;
+    padding-bottom: 3rem;
+    
+}
+
+.card-detais h3{
+    color: #202E56;
+    font-size: var(--font-size-26px);
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 900;
+    margin-top: -1rem;
+    margin-bottom: 0;
+    padding: 3rem 0 1.2rem 0;
+}
+.card-detais p{
+    color: var(--neutral-desaturated-blue);
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: var(--font-size-16px);
+    margin-top: 0;
+    margin-bottom: 0;
+   
+    
+}
+
+/*Order summary details*/
+.order-sum-details{
+    margin: 1.2rem 2.75rem;
+}
+
+.plan{
+    align-items: center;
+    background-color: #F8F9FE;
+    border-radius: 0.8rem;
+    display: flex;
+    flex-direction: row;
+    margin: 1.8rem 2.75rem ;
+    padding: 1.25rem;
+    
+}
+
+.music-icon{
+    height: 2.8125rem;
+    padding: 0;
+    width: auto;
+}
+
+.amount{ 
+    font-family: 'Red Hat Display', sans-serif;
+    margin: 0;
+    padding-left: 1rem;
+}
+
+.amount-plan{
+    color: #2E3555;
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: var(--font-size-16px);
+    font-weight: 900;
+    margin: 0;
+    padding-bottom: 0.1rem;
+    padding-top: 0.1rem;
+
+}
+
+.annual-text{
+    color: var(--neutral-desaturated-blue);
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: var(--font-size-16px);
+    font-weight: 500;
+    margin: 0;
+}
+
+.change-text{
+    font-family: 'Red Hat Display', sans-serif;
+    margin: 0;
+    margin-left: auto;
+    
+}
+
+.change-text a{
+    color: #5A4CC6;
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: var(--font-size-16px);
+    font-weight: 900;
+    text-decoration: underline;
+}
+
+.change-text a:hover{
+    cursor: pointer;
+    opacity: 0.5;
+    text-decoration: none;
+    
+}
+
+/*Button styles*/
+
+.payment-btn{
+    background-color: var(--primary-bright-blue);
+    box-shadow:  0 1.6rem 0.8rem  var(--primary-pale-blue);
+    border-radius: 0.8rem;
+    color: var(--body-color);
+    font-family: 'Red Hat Display', sans-serif;
+    margin: 2.75rem 2.75rem 2rem 2.75rem;
+    padding-top: 1rem ;
+    padding-bottom: 1rem ;
+}
+
+.payment-btn a{
+    color: var(--card-bg-color);
+    text-decoration: none;
+}
+
+.payment-btn:hover{
+    background-color: var(--primary-bright-blue);
+    cursor: pointer;
+    opacity: 0.5;
+    
+}
+
+.cancel-btn{
+    font-family: 'Red Hat Display', sans-serif;
+    margin-top:2rem !important;
+    padding: 0;
+    
+}
+
+.cancel-btn a{
+    color: var(--neutral-desaturated-blue);
+    font-size: 1rem;
+    font-weight: 700;
+    text-decoration: none;
+    
+}
+
+.cancel-btn a:hover{
+    color: #2E3555;
+}
+
+/*Media queries for mobile*/
+
+@media only screen and (max-width: 480px) {
+    .container{
+        background-image: url(images/pattern-background-mobile.svg);
+        background-repeat: repeat-x;
+        background-position: -50%;
+        background-size: contain;
+        background-color: hsl(225, 100%, 94%);
+        max-width: 23.4375rem;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+       
+    
+    }
+
+    .image-music{
+        border-radius: 0.8rem 0.8rem 0 0;
+        height: 10rem;
+        width: 20.5rem;
+    }
+
+    .order-sum-details{
+        margin: 1.2rem 1.5rem;
+    }
+
+    .plan{
+        align-items: center;
+        background-color: #F8F9FE;
+        border-radius: 0.8rem;
+        display: flex;
+        flex-direction: row;
+        margin: 1.8rem 1.5rem;
+    }
+
+    .order-summary-card{
+        margin: auto;
+        overflow: hidden;
+        padding-top: 5.75rem;
+        padding-bottom: 5.75rem;
+        text-align: center;
+        width: 20.5rem;
+    }
+
+    .card-detais h3{
+        font-size: 1.25rem;
+        font-weight: 900;
+        margin-top: -1.6rem;
+        margin-bottom: 0;
+        padding: 3rem 0 1.2rem 0;
+    }
+    .card-detais p{
+        color: var(--neutral-desaturated-blue);
+        font-size: 0.875rem;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+
+
+    .amount-plan{
+        color: #2E3555;
+        font-family: 'Red Hat Display', sans-serif;
+        font-size: 0.875rem;
+        font-weight: 900;
+        margin: 0;
+        padding-bottom: 0.1rem;
+        padding-top: 0.1rem;
+    
+    }
+    
+    .annual-text{
+        color: var(--neutral-desaturated-blue);
+        font-family: 'Red Hat Display', sans-serif;
+        font-size: 0.875rem;
+        font-weight: 500;
+        margin: 0;
+    }
+    
+    .change-text{
+        font-family: 'Red Hat Display', sans-serif;
+        margin: 0;
+        margin-left: auto;
+        
+    }
+    
+    .change-text a{
+        color: #5A4CC6;
+        font-family: 'Red Hat Display', sans-serif;
+        font-size: 0.875rem;
+        font-weight: 900;
+        text-decoration: underline;
+    }
+    
+    .change-text a:hover{
+        cursor: pointer;
+        opacity: 0.5;
+        text-decoration: none;
+        
+    }
+}
+
+/*Media Queries for Tablets*/
+
+@media only screen and (min-width: 375px) and (max-width: 768px) {
+    
+    .container{
+        background-image: url(images/pattern-background-mobile.svg);
+        background-repeat: repeat-x;
+        background-color: hsl(225, 100%, 94%);
+        max-width: 48rem;
+        margin: 0 auto;
+        padding: 0;
+        text-align: center;
+    }
+
+    .image-music{
+        border-radius: 0.8rem 0.8rem 0 0;
+        width: 22rem;
+        height: auto;
+    }
+
+    .order-sum-details{
+        margin: 1.2rem 1.5rem;
+    }
+
+    .plan{
+        align-items: center;
+        background-color: #F8F9FE;
+        border-radius: 0.8rem;
+        display: flex;
+        flex-direction: row;
+        margin: 1.8rem 1.5rem;
+    }
+
+    .order-summary-card{
+        overflow: hidden;
+        margin: auto;
+        padding-top: 5.75rem;
+        padding-bottom: 5.75rem;
+        width: 22rem;
+        text-align: center;  
+    }
+
+    .card-detais h3{
+        font-size: 1.25rem;
+        font-weight: 900;
+        margin-top: -1.6rem;
+        margin-bottom: 0;
+        padding: 3rem 0 1.2rem 0;
+    }
+    .card-detais p{
+        color: var(--neutral-desaturated-blue);
+        margin-top: 0;
+        margin-bottom: 0;
+        font-size: 0.875rem;
+        
+    }
+
+    .amount-plan{
+        color: #2E3555;
+        font-family: 'Red Hat Display', sans-serif;
+        font-size: 0.875rem;
+        font-weight: 900;
+        margin: 0;
+        padding-bottom: 0.1rem;
+        padding-top: 0.1rem;
+    }
+    
+    .annual-text{
+        color: var(--neutral-desaturated-blue);
+        font-family: 'Red Hat Display', sans-serif;
+        font-size: 0.875rem;
+        font-weight: 500;
+        margin: 0;
+    }
+    
+    .change-text{
+        font-family: 'Red Hat Display', sans-serif;
+        margin: 0;
+        margin-left: auto;
+        
+    }
+    
+    .change-text a{
+        color: #5A4CC6;
+        font-family: 'Red Hat Display', sans-serif;
+        font-size: 0.875rem;
+        font-weight: 900;
+        text-decoration: underline;
+    }
+    
+    .change-text a:hover{
+        cursor: pointer;
+        opacity: 0.5;
+        text-decoration: none;
+        
+    }
+}
+
+
+
+
