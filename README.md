@@ -11,7 +11,7 @@ This is a solution to the [Order summary component challenge on Frontend Mentor]
 ### Links
 
 - Solution URL: [https://github.com/SMarukona/order-summary-component]
-- Live Site URL: [https://smarukona.github.io/order-summary-card/]
+- Live Site URL: [https://smarukona.github.io/order-summary-component/]
 
 ### Built with
 
